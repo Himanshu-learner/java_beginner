@@ -6,7 +6,7 @@ class shape{
 
     public void data(){
     
-    System.out.println("Enter your two data");
+    System.out.println("\nEnter your length and breath of calculating area");
     Scanner sc = new Scanner(System.in);
     length = sc.nextInt();
     breath = sc.nextInt();
@@ -24,14 +24,14 @@ class shape{
 class Triangle extends shape{
 
     public void disp_area(){
-        System.out.println("Triangle area = "+(0.5*length*breath));
+        System.out.println("\nTriangle area = "+(0.5*length*breath));
     }
 }
 
 class Rectangle extends shape{
     
     public  void disp_area(){
-        System.out.println("Rectangle area = "+(length*breath));
+        System.out.println("\nRectangle area = "+(length*breath));
         
     }
 }
@@ -39,12 +39,12 @@ public class area{
     public static void main(String[] args) {
         
         Triangle triangle = new Triangle();
-        System.out.println("TRIANGLE");
+        System.out.println("\nTRIANGLE AREA");
         triangle.data();
         triangle.disp_area();
         
         Rectangle rectangle= new Rectangle();
-        System.out.println("Rectangle");
+        System.out.println("\nRectangle AREA");
         rectangle.data();
         rectangle.disp_area();
  

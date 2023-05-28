@@ -1,3 +1,4 @@
+//--------------------------INTEREST CALCULATOR-----------------------//
 import java.util.*;
 
 class calculation{

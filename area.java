@@ -1,19 +1,24 @@
 import java.util.*;
 
+//Base Class
 class shape{
     
     public int length,breath;
 
     public void data(){
     
+    //Input through user
     System.out.println("\nEnter your length and breath of calculating area");
     Scanner sc = new Scanner(System.in);
     length = sc.nextInt();
     breath = sc.nextInt();
+
+    //Input of user show
     System.out.println("Your entered values = " + length +", "+breath);
          
     }   
     
+    //Area Method
     public void disp_area() {
        
         System.out.println("Your area = "+ (length*breath));
@@ -21,6 +26,7 @@ class shape{
     }
 }
 
+//Triangle Derived Class
 class Triangle extends shape{
 
     public void disp_area(){
@@ -28,6 +34,7 @@ class Triangle extends shape{
     }
 }
 
+//Rectangle Derived Class
 class Rectangle extends shape{
     
     public  void disp_area(){
@@ -35,6 +42,8 @@ class Rectangle extends shape{
         
     }
 }
+
+//Main Method Class
 public class area{
     public static void main(String[] args) {
         
